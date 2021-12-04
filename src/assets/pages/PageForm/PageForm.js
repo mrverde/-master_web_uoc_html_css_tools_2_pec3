@@ -39,7 +39,6 @@ const PageForm = () => {
             <DatePicker
                 {...field}
                 {...props}
-                className="form-control"
                 dateFormat="d/M/Y"
                 selected={(field.value && new Date(field.value)) || null}
                 onChange={val => {
@@ -66,9 +65,9 @@ const PageForm = () => {
     });
 
     return (
-        <div className="form">
-            <div className="form-container">
-                <h1 className="page-title page-title__form">Ticket Reservation</h1>
+        <div>
+            <div >
+                <h1 >Ticket Reservation</h1>
                 <Formik
                     initialValues={
                         {
@@ -84,36 +83,36 @@ const PageForm = () => {
                 >
                     {({ isSubmitting, errors, touched }) => (
                         <Form name="contact" data-netlify={true} >
-                            <div className="form-group">
+                            <div >
                                 <label htmlFor="name">Name*</label>
-                                <Field name="name" className="form-control" type="text" />
-                                {errors.name && touched.name ? (<div className="form-error">{errors.name}</div>) : null}
+                                <Field name="name" type="text" />
+                                {errors.name && touched.name ? (<div >{errors.name}</div>) : null}
                             </div>
 
-                            <div className="form-group">
+                            <div >
                                 <label htmlFor="email">Email Address*</label>
-                                <Field name="email" className="form-control" type="email" />
-                                {errors.email && touched.email ? (<div className="form-error">{errors.email}</div>) : null}
+                                <Field name="email" type="email" />
+                                {errors.email && touched.email ? (<div >{errors.email}</div>) : null}
                             </div>
 
-                            <div className="form-group">
+                            <div >
                                 <label htmlFor="tickets">Number of Tickets:</label>
                                 <Field as="select" name="tickets">
                                     {[...Array(10).keys()].map((el) => (
                                         <option key={`opt-${el}`} value={el + 1}>{el + 1}</option>
                                     ))}
                                 </Field>
-                                {errors.tickets && touched.tickets ? (<div className="form-error">{errors.tickets}</div>) : null}
+                                {errors.tickets && touched.tickets ? (<div >{errors.tickets}</div>) : null}
                             </div>
 
-                            <div className="form-group">
+                            <div >
                                 <label htmlFor="date">Date of reservation:*</label>
                                 <DatePickerField name="date" />
-                                {errors.date ? (<div className="form-error">{errors.date}</div>) : null}
+                                {errors.date ? (<div >{errors.date}</div>) : null}
                             </div>
 
-                            <div className="form-group">
-                                <button type="submit" className="btn btn-primary float-right form-submit-btn" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
+                            <div >
+                                <button type="submit" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
                             </div>
 
                         </Form>

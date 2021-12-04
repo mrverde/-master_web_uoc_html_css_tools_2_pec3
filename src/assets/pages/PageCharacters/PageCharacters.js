@@ -8,7 +8,7 @@ const PageCharacters = () => {
     const characterList = characters;
 
     return <>
-        <div className="card-container">
+        <div>
             {characterList.map((char, idx) => (
                 <CardCharacter
                     key={`${char}-${idx}`}

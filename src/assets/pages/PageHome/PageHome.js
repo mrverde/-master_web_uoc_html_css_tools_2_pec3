@@ -12,14 +12,14 @@ const PageHome = () => {
     }, []);
 
     return <>
-        <div className="home">
-            <div className="square square-1"></div>
-            <div className="square square-2">
-                <div className="home-title">The <br />  Orphan <br />of Zhao </div>
-                <hr className="home-separator" />
-                <div className="home-subtitle">A yellow history</div></div>
-            <div className="square square-3"></div>
-            <div className="square square-4"></div>
+        <div>
+            <div ></div>
+            <div >
+                <div >The <br />  Orphan <br />of Zhao </div>
+                <hr />
+                <div >A yellow history</div></div>
+            <div ></div>
+            <div ></div>
         </div>
     </>
 }

@@ -9,7 +9,7 @@ import "./Header.scss"
 const Header = () => {
     const pagesList = pages;
 
-    return <header className="header">
+    return <header>
         <Link to="/"><Logo /></Link>
         <NavLinks pages={pagesList} isHeader={true} />
     </header>

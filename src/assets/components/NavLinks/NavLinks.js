@@ -9,7 +9,7 @@ import "./NavLinks.scss"
 const NavLinks = props => {
     const { pages, isHeader } = props;
 
-    const classGen = isHeader ? "header" : "footer";
+    const classGen = isHeader ? "" : "";
 
     let location = useLocation();
 
@@ -22,10 +22,8 @@ const NavLinks = props => {
             }
 
             return <li key={`nav-${idx}-${key}`}
-                className={currentKey["href"] === location.pathname ?
-                    `nav-item nav-item__${classGen} active active__${classGen}` :
-                    `nav-item nav-item__${classGen}`}>
-                <Link className={`nav-link nav-link__${classGen}`}
+                className={currentKey["href"] === location.pathname ? `active` : ``}>
+                <Link
                     to={currentKey["href"]}>
                     {currentKey["label"]}
                 </Link>
@@ -35,8 +33,8 @@ const NavLinks = props => {
         )
     };
 
-    return <div className={`nav-container nav-container__${classGen}`}>
-        <ul className={`nav nav__${classGen}`}  >
+    return <div >
+        <ul >
             {generateNavElements()}
         </ul >
     </div>

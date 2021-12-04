@@ -9,11 +9,11 @@ const Footer = () => {
     const pagesList = pages;
 
     const classes = {
-        containerClass: "footer-icon-container",
-        subcontainerClass: "footer-icon-subcontainer"
+        containerClass: "",
+        subcontainerClass: ""
     }
 
-    return <footer className="footer">
+    return <footer>
         <NavLinks pages={pagesList} />
         <SocialNetworksLinks classes={classes} />
     </footer>

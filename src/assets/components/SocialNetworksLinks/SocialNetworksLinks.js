@@ -7,19 +7,19 @@ import "./SocialNetworksLinks.scss"
 const SocialNetworksLinks = (props) => {
     const { classes } = props;
 
-    return <div className={classes.containerClass}>
-        <div className={classes.subcontainerClass}>
-            <a className="link" href="http://twitter.com" target="_blank">
-                <FontAwesomeIcon icon={faTwitter} className="icon-link" />
+    return <div>
+        <div>
+            <a href="http://twitter.com" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a className="link" href="http://facebook.com" target="_blank">
-                <FontAwesomeIcon icon={faFacebook} className="icon-link" />
+            <a href="http://facebook.com" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a className="link" href="http://instagram.com" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} className="icon-link" />
+            <a href="http://instagram.com" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a className="link" href="http://tiktok.com" target="_blank">
-                <FontAwesomeIcon icon={faTiktok} className="icon-link" />
+            <a href="http://tiktok.com" target="_blank">
+                <FontAwesomeIcon icon={faTiktok} />
             </a>
         </div>
     </div>
