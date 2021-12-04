@@ -64,7 +64,7 @@ const PageForm = () => {
 
     return (
         <div>
-            <div className="bg-red-700">
+            <div>
                 <h1 >Ticket Reservation</h1>
                 <Formik
                     initialValues={
