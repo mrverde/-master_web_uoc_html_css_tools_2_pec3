@@ -3,8 +3,6 @@ import { Formik, Field, Form, useField, useFormikContext } from 'formik';
 import DatePicker from "react-datepicker";
 import * as Yup from 'yup';
 
-import "./PageForm.scss"
-
 const PageForm = () => {
 
     const encode = (data) => {
@@ -66,7 +64,7 @@ const PageForm = () => {
 
     return (
         <div>
-            <div >
+            <div className="bg-red-700">
                 <h1 >Ticket Reservation</h1>
                 <Formik
                     initialValues={

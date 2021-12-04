@@ -1,7 +1,6 @@
 import React from "react";
 
 import chineseTemple from '../../images/buddha-tempel-1468928.jpg'
-import "./PageBlog.scss"
 
 const PageBlog = () => {
     return <article>

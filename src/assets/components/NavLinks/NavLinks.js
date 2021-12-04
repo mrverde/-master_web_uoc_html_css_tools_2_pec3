@@ -4,8 +4,6 @@ import {
     useLocation
 } from "react-router-dom";
 
-import "./NavLinks.scss"
-
 const NavLinks = props => {
     const { pages, isHeader } = props;
 

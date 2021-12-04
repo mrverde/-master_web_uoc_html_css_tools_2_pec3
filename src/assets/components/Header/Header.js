@@ -4,7 +4,6 @@ import Logo from "../Logo";
 import { Link } from "react-router-dom";
 
 import pages from "../../config/pages";
-import "./Header.scss"
 
 const Header = () => {
     const pagesList = pages;

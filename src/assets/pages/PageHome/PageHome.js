@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 
-import "./PageHome.scss"
-
 const PageHome = () => {
     useEffect(() => {
         document.body.classList.add("overflowy-hidden");

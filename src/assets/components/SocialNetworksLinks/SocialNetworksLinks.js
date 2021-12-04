@@ -2,8 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons"
 
-import "./SocialNetworksLinks.scss"
-
 const SocialNetworksLinks = (props) => {
     const { classes } = props;
 

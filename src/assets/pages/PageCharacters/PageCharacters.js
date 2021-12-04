@@ -2,7 +2,6 @@ import React from "react";
 import CardCharacter from "../../components/CardCharacter"
 
 import characters from "../../config/characters";
-import "./PageCharacters.scss";
 
 const PageCharacters = () => {
     const characterList = characters;

@@ -3,7 +3,6 @@ import NavLinks from "../NavLinks"
 import SocialNetworksLinks from "../SocialNetworksLinks";
 
 import pages from "../../config/pages";
-import "./Footer.scss";
 
 const Footer = () => {
     const pagesList = pages;

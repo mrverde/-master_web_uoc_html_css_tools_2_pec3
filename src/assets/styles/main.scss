@@ -1,3 +1,6 @@
 @import "variables";
-@import "atomicclasses";
 @import "commonclasses";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./CardCharacter.scss"
-
 const CardCharacter = props => {
     const { img, imgAlt, characterName, actorName, chBack } = props;
 
