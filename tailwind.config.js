@@ -22,6 +22,7 @@ module.exports = {
       white: '#fff',
       black: '#000',
       hoverColor: '#aaa',
+      red: '#d00'
     },
     minHeight: {
       '300': '300px'

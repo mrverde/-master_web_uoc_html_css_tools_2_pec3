@@ -13,7 +13,7 @@ const PageBlog = () => {
             </div>
         </div>
         <div className="flex justify-center pb-12 m-30">
-            <div className="max-w-5xl p-12 bg-white">
+            <div className="max-w-5xl p-12 bg-white shadow">
                 <p className="mt-0 mb-4 font-bold">Far far away, behind the word mountains, far from the countries Vokalia and
                     Consonantia, there live the blind texts.</p>
                 <blockquote className="flex flex-col items-center justify-center mx-64 mb-5 text-sm text-center" cite="https://es.wikiquote.org/wiki/Buda_Gautama">

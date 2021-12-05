@@ -63,9 +63,9 @@ const PageForm = () => {
     });
 
     return (
-        <div>
-            <div>
-                <h1 >Ticket Reservation</h1>
+        <div className="flex justify-center w-screen pt-8 pb-40">
+            <div className="flex flex-col justify-center max-w-screen-sm p-8 mx-4 my-0 bg-white shadow">
+                <h1 className="mb-5 text-5xl font-normal">Ticket Reservation</h1>
                 <Formik
                     initialValues={
                         {
@@ -81,36 +81,36 @@ const PageForm = () => {
                 >
                     {({ isSubmitting, errors, touched }) => (
                         <Form name="contact" data-netlify={true} >
-                            <div >
-                                <label htmlFor="name">Name*</label>
-                                <Field name="name" type="text" />
-                                {errors.name && touched.name ? (<div >{errors.name}</div>) : null}
+                            <div className="mb-4">
+                                <label className="inline-block mb-2" htmlFor="name">Name*</label>
+                                <Field className="block w-full px-1 py-2 text-base border border-solid rounded bg-clip-padding text-secondary" name="name" type="text" />
+                                {errors.name && touched.name ? (<div className="mt-1 text-sm text-red">{errors.name}</div>) : null}
                             </div>
 
-                            <div >
-                                <label htmlFor="email">Email Address*</label>
-                                <Field name="email" type="email" />
-                                {errors.email && touched.email ? (<div >{errors.email}</div>) : null}
+                            <div className="mb-4">
+                                <label className="inline-block mb-2" htmlFor="email">Email Address*</label>
+                                <Field className="block w-full px-1 py-2 text-base border border-gray-800 border-solid rounded bg-clip-padding text-secondary" name="name" type="text" name="email" type="email" />
+                                {errors.email && touched.email ? (<div className="mt-1 text-sm text-red">{errors.email}</div>) : null}
                             </div>
 
-                            <div >
-                                <label htmlFor="tickets">Number of Tickets:</label>
-                                <Field as="select" name="tickets">
+                            <div className="mb-4">
+                                <label className="inline-block mb-2" htmlFor="tickets">Number of Tickets:</label>
+                                <Field className="block w-full px-1 py-2 text-base bg-white border border-solid rounded bg-clip-padding text-secondary" name="name" type="text" as="select" name="tickets">
                                     {[...Array(10).keys()].map((el) => (
                                         <option key={`opt-${el}`} value={el + 1}>{el + 1}</option>
                                     ))}
                                 </Field>
-                                {errors.tickets && touched.tickets ? (<div >{errors.tickets}</div>) : null}
+                                {errors.tickets && touched.tickets ? (<div className="mt-1 text-sm text-red">{errors.tickets}</div>) : null}
                             </div>
 
-                            <div >
-                                <label htmlFor="date">Date of reservation:*</label>
-                                <DatePickerField name="date" />
-                                {errors.date ? (<div >{errors.date}</div>) : null}
+                            <div className="mb-4">
+                                <label className="inline-block mb-2" htmlFor="date">Date of reservation:*</label>
+                                <DatePickerField className="block w-full px-1 py-2 text-base border border-solid rounded bg-clip-padding text-secondary" name="name" type="text" name="date" />
+                                {errors.date ? (<div className="mt-1 text-sm text-red">{errors.date}</div>) : null}
                             </div>
 
-                            <div >
-                                <button type="submit" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
+                            <div className="mb-4">
+                                <button className="float-right px-4 py-2 mt-2 text-lg font-medium text-white border rounded-md hover:bg-opacity-90 bg-primary" type="submit" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
                             </div>
 
                         </Form>
