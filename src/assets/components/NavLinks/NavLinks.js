@@ -7,7 +7,9 @@ import {
 const NavLinks = props => {
     const { pages, isHeader } = props;
 
-    const widthFooter = !isHeader && "w-3/4"
+    const widthFooter = !isHeader ? "flex md:w-full mxlg:w-3/4 mxlg:justify-center" : ``;
+
+    const mqHeaderHidden = isHeader ? "mxlg:hidden" : ``;
 
     let location = useLocation();
 
@@ -21,7 +23,7 @@ const NavLinks = props => {
             const activeTab = currentKey["href"] === location.pathname && !isHeader ? `bg-secondary` : ``
 
             return <li key={`nav-${idx}-${key}`}
-                className={`h-full px-4 py-6 text-2xl secondary  ${activeTab}`}>
+                className={`h-full px-4 py-6 text-2xl secondary whitespace-nowrap ${activeTab}`}>
                 <Link
                     to={currentKey["href"]} className="text-white hover:text-hoverColor">
                     {currentKey["label"]}
@@ -32,7 +34,7 @@ const NavLinks = props => {
         )
     };
 
-    return <div className={widthFooter}>
+    return <div className={`${widthFooter} ${mqHeaderHidden}`}>
         <ul className="flex items-stretch pl-0 my-0 flex-nowrap ">
             {generateNavElements()}
         </ul >

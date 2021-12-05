@@ -33,7 +33,12 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
-      '3xl': '1920px'
+      '3xl': '1920px',
+      'mx2xl': { 'max': '1535px' },
+      'mxxl': { 'max': '1279px' },
+      'mxlg': { 'max': '1023px' },
+      'mxmd': { 'max': '767px' },
+      'mxsm': { 'max': '639px' },
     },
     maxWidth: {
       'fullhd': '1920px',

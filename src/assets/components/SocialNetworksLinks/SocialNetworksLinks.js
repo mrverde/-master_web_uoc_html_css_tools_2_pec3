@@ -4,7 +4,7 @@ import { faFacebook, faTwitter, faInstagram, faTiktok } from "@fortawesome/free-
 
 const SocialNetworksLinks = () => {
 
-    return <div className="flex justify-end w-1/4 m-auto">
+    return <div className="flex m-auto mxlg:justify-center lg:justify-end md:w-full mxlg:w-1/4">
         <div className="flex m-4 text-5xl text-white">
             <a href="http://twitter.com" target="_blank" className="mx-4 hover:text-hoverColor">
                 <FontAwesomeIcon icon={faTwitter} />

@@ -12,7 +12,7 @@ const Footer = () => {
         subcontainerClass: ""
     }
 
-    return <footer className="fixed bottom-0 left-0 z-10 flex items-center justify-between w-full bg-primary">
+    return <footer className="fixed bottom-0 left-0 z-10 flex items-center justify-between w-full bg-primary mxlg:flex-col">
         <NavLinks pages={pagesList} />
         <SocialNetworksLinks classes={classes} />
     </footer>
