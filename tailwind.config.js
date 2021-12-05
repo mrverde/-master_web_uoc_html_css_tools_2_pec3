@@ -43,7 +43,8 @@ module.exports = {
     maxWidth: {
       'fullhd': '1920px',
       'lg': '32rem',
-      '5xl': '64rem'
+      '5xl': '64rem',
+      '95per': '95%'
     },
     fontFamily: {
       'primary': ["-apple-system", "blinkmacsystemfont", "Segoe UI", "roboto",

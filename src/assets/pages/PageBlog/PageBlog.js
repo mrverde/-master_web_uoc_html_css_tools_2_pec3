@@ -13,10 +13,10 @@ const PageBlog = () => {
             </div>
         </div>
         <div className="flex justify-center pb-12 m-30">
-            <div className="max-w-5xl p-12 bg-white shadow">
+            <div className="max-w-5xl p-12 bg-white shadow mxlg:max-w-95per">
                 <p className="mt-0 mb-4 font-bold">Far far away, behind the word mountains, far from the countries Vokalia and
                     Consonantia, there live the blind texts.</p>
-                <blockquote className="flex flex-col items-center justify-center mx-64 mb-5 text-sm text-center" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
+                <blockquote className="flex flex-col items-center justify-center mx-64 mb-5 text-sm text-center mxlg:mx-20" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
                     <p className="italic ">
                         "Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
@@ -59,7 +59,7 @@ const PageBlog = () => {
                     from the countries Vokalia and Consonantia, there live the blind texts. Separated they
                     live in Bookmarksgrove</p>
                 <img className="block w-full my-10" src={chineseTemple} alt="Chinese temple" />
-                <blockquote className="flex flex-col items-center justify-center mx-64 text-sm text-center" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
+                <blockquote className="flex flex-col items-center justify-center mx-64 text-sm text-center mxlg:mx-20" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
                     <p className="italic">
                         "Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
