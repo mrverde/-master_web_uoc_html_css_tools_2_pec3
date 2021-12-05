@@ -3,7 +3,7 @@ module.exports = {
     './src/**/*.html',
     './src/**/*.js',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       backgroundImage: {
@@ -12,12 +12,25 @@ module.exports = {
       }
     },
     colors: {
-      "primary": '#534ab7',
-      "secondary": '#fff',
-      "bgcolor": '#ebedee'
+      primary: '#534ab7',
+      secondary: '#4b4a51',
+      bgcolor: '#ebedee',
+      white: '#fff',
+      black: '#000'
+    },
+    textColor: {
+      white: '#fff',
+      black: '#000',
+      hoverColor: '#aaa',
     },
     minHeight: {
       '300': '300px'
+    },
+    fontFamily: {
+      'primary': ["-apple-system", "blinkmacsystemfont", "Segoe UI", "roboto",
+        "Helvetica Neue", "arial", "sans-serif", "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol"],
+      'secondary': ["anton", "sans-serif"],
     }
   },
   variants: {

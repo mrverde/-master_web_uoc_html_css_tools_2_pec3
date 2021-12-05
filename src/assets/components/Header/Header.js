@@ -8,7 +8,7 @@ import pages from "../../config/pages";
 const Header = () => {
     const pagesList = pages;
 
-    return <header>
+    return <header className="flex flex-row items-center justify-between h-16 bg-primary">
         <Link to="/"><Logo /></Link>
         <NavLinks pages={pagesList} isHeader={true} />
     </header>
