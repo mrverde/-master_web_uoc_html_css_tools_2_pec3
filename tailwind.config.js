@@ -27,6 +27,19 @@ module.exports = {
     minHeight: {
       '300': '300px'
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '1920px'
+    },
+    maxWidth: {
+      'fullhd': '1920px',
+      'lg': '32rem',
+      '5xl': '64rem'
+    },
     fontFamily: {
       'primary': ["-apple-system", "blinkmacsystemfont", "Segoe UI", "roboto",
         "Helvetica Neue", "arial", "sans-serif", "Apple Color Emoji",
