@@ -6,9 +6,9 @@ const PageBlog = () => {
     return <article className="block pb-40">
         <div className="box-border w-full m-0">
             <div className="px-8 py-16 mb-8 bg-cover rounded bg-bgcolor bg-jumbotron-image min-h-300">
-                <div className="w-full max-w-xl px-1 mx-auto">
-                    <h1 className="mt-0 text-6xl font-light">Blog Article or Information / Bio Page</h1>
-                    <p className="text-xl font-light">by Author One</p>
+                <div className="w-full max-w-5xl px-1 mx-auto">
+                    <h1 className="mt-0 text-6xl font-light text-white stroke">Blog Article or Information / Bio Page</h1>
+                    <p className="mt-4 text-xl font-light text-white stroke">by Author One</p>
                 </div>
             </div>
         </div>

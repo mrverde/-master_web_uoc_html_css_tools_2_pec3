@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import "variables";
-@import "commonclasses";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke * -1;
+
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+    }
+  }
+
+  @return $shadow;
+}
+  
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+@layer utilities {
+  .stroke {
+    @include stroke(2, #000);
+  }
+}

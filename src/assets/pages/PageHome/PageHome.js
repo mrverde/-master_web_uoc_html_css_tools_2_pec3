@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 
 const PageHome = () => {
     useEffect(() => {
-        document.body.classList.add("overflowy-hidden");
+        document.body.classList.add("overflow-y-hidden");
         window.scrollTo(0, 0);
         return () => {
-            document.body.classList.remove("overflowy-hidden");
+            document.body.classList.remove("overflow-y-hidden");
         };
     }, []);
 
