@@ -7,7 +7,7 @@ import {
 const NavLinks = props => {
     const { pages, isHeader } = props;
 
-    const widthFooter = !isHeader ? "flex md:w-full mxlg:w-3/4 mxlg:justify-center" : ``;
+    const widthFooter = !isHeader ? "flex md:w-full mxmd:w-3/4 mxmd:justify-center" : ``;
 
     const mqHeaderHidden = isHeader ? "mxlg:hidden" : ``;
 
