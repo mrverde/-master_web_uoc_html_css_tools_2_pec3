@@ -31,3 +31,21 @@
     clip-path: polygon(25% 0,100% 0,75% 100%,0 100%);
   }
 }
+
+@layer components {
+  .form-label {
+    @apply inline-block mb-2;
+  }
+
+  .form-field {
+    @apply block w-full px-1 py-2 text-base border border-solid rounded bg-clip-padding;
+  }
+
+  .form-error {
+    @apply mt-1 text-sm text-red;
+  }
+
+  .grid-text-padding {
+    @apply pt-5 pl-16 sm:pl-28 md:pl-14 lg:pl-20 xl:pl-28 2xl:pl-32 3xl:pl-40
+  }
+}
