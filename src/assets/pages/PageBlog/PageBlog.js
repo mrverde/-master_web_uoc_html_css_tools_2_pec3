@@ -18,11 +18,11 @@ const PageBlog = () => {
                     Consonantia, there live the blind texts.</p>
                 <blockquote className="flex flex-col items-center justify-center mx-64 mb-5 text-sm text-center" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
                     <p className="italic ">
-                        Far far away, behind the word mountains, far from the countries Vokalia and
+                        "Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                         at the coast of the Semantics, a large language ocean. Far far away, behind the
-                        word mountains.</p>
-                    <strong className="mt-2 italic">Zu Ming Yu</strong>
+                        word mountains."</p>
+                    <strong className="mt-2">Zu Ming Yu</strong>
                 </blockquote>
 
                 <p className="mb-10">Far far away, behind the word mountains, far from the countries Vokalia and
@@ -61,11 +61,11 @@ const PageBlog = () => {
                 <img className="block w-full my-10" src={chineseTemple} alt="Chinese temple" />
                 <blockquote className="flex flex-col items-center justify-center mx-64 text-sm text-center" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
                     <p className="italic">
-                        Far far away, behind the word mountains, far from the countries Vokalia and
+                        "Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                         at the coast of the Semantics, a large language ocean. Far far away, behind the
-                        word mountains. </p><br />
-                    <strong>Zu Ming Yu</strong>
+                        word mountains."</p><br />
+                    <strong className="mt-2">Zu Ming Yu</strong>
                 </blockquote>
             </div>
         </div>
