@@ -23,7 +23,7 @@ const NavLinks = props => {
             const activeTab = currentKey["href"] === location.pathname && !isHeader ? `bg-secondary` : ``
 
             return <li key={`nav-${idx}-${key}`}
-                className={`h-full px-4 py-6 text-2xl secondary whitespace-nowrap ${activeTab}`}>
+                className={`h-full px-4 py-6 lg:text-2xl secondary whitespace-nowrap  ${activeTab}`}>
                 <Link
                     to={currentKey["href"]} className="text-white hover:text-hoverColor">
                     {currentKey["label"]}
