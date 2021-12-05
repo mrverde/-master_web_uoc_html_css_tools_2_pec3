@@ -50,6 +50,9 @@ module.exports = {
         "Helvetica Neue", "arial", "sans-serif", "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol"],
       'secondary': ["anton", "sans-serif"],
+    },
+    backgroundPosition: {
+      "min60": '60%',
     }
   },
   variants: {

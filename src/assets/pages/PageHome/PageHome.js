@@ -10,7 +10,7 @@ const PageHome = () => {
     }, []);
 
     return <>
-        <div className="absolute grid w-full h-full grid-cols-4 gap-4 pl-5 bg-cover align-right bg-home-image max-w-fullhd">
+        <div className="absolute grid w-full h-full grid-cols-4 gap-4 pl-5 bg-cover align-right bg-home-image max-w-fullhd mxlg:bg-min60">
             <div />
             <div />
             <div />
